@@ -1,1 +1,1 @@
-# Learning-Management-System
+# AI Powered LMS
