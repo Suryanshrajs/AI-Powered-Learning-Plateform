@@ -1,0 +1,285 @@
+[{
+  "_id": {
+    "$oid": "67733187064557b224986f2f"
+  },
+  "courses": [
+    {
+      "id": 1,
+      "name": "DSA",
+      "description": "Master foundational DSA concepts effortlessly",
+      "imageUrl": "https://i.postimg.cc/d3Q0zzxT/dsaCheck.png"
+    },
+    {
+      "id": 2,
+      "name": "Core Subjects",
+      "description": "Deep dive into core subjects",
+      "imageUrl": "https://i.postimg.cc/9FZsmFnj/coresubjectnow.png"
+    },
+    {
+      "id": 3,
+      "name": "Mern Stack",
+      "description": "Build full-stack applications seamlessly",
+      "imageUrl": "https://i.postimg.cc/qB99HCQL/mernstack-Now.png"
+    },
+    {
+      "id": 4,
+      "name": "Core Java",
+      "description": "Master fundamentals of Core Java",
+      "imageUrl": "https://i.postimg.cc/ydHxTJhj/coreJava.png"
+    }
+  ],
+  "subjectNames": [
+    {
+      "name": "DSA",
+      "id": 1,
+      "subjects": [
+        {
+          "name": "DSA With Java",
+          "id": 1,
+          "imageUrl": "https://i.postimg.cc/Dw4zkQB5/dsa-With-Java.png",
+          "description": "Learn DSA fundamentals using Java",
+          "topics": [
+            "Introduction",
+            "Input-Output, Variables & Data Types",
+            "Conditional Statements",
+            "Loops",
+            "All about Patterns",
+            "Methods / Functions",
+            "Space & Time Complexity",
+            "Arrays",
+            "2D Arrays",
+            "String",
+            "StringBuilder",
+            "Bit Manipulation"
+          ],
+          
+          "videoContent": [
+            {
+              "id": 1,
+              "title": "Intro",
+              "url": "https://www.youtube.com/embed/yRpLlJmRo2w?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+              "description": "Introduction to Java Language | Lecture 1 | Complete Placement Course"
+            },
+            {
+              "id": 2,
+              "title": "Array",
+              "url": "https://www.youtube.com/embed/LusTv0RlnSU?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+              "description": "Variables in Java | Input Output | Complete Placement Course | Lecture 2"
+            }
+          ]
+        },
+        {
+          "name": "DSA With Cpp",
+          "id": 2,
+          "imageUrl": "https://i.postimg.cc/8P0C0XBj/dsa-With-Cpp.png",
+          "description": "Master DSA fundamentals with C++",
+          "topics": [
+            "Basics",
+            "Sorting Techniques",
+            "Arrays",
+            "Binary Search",
+            "Strings",
+            "Learn LinkedList",
+            "Recursion",
+            "Bit Manipulation",
+            "Stack and Queues",
+            "Sliding Window & Two Pointer",
+            "Heaps",
+            "Greedy Algorithms",
+            "Binary Trees",
+            "Binary Search Trees",
+            "Graphs",
+            "Dynamic Programming",
+            "Tries",
+            "Strings"
+          ]
+          , 
+          "videoContent": [
+            {
+              "id": 1,
+              "title": "Recursion",
+              "url": "https://www.youtube.com/embed/yVdKa8dnKiE?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9",
+              "description": "Re 1. Introduction to Recursion | Recursion Tree | Stack Space | Strivers A2Z DSA Course"
+            },
+            {
+              "id": 2,
+              "title": "Recursion",
+              "url": "https://www.youtube.com/embed/un6PLygfXrA?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9",
+              "description": "Re 2. Problems on Recursion | Strivers A2Z DSA Course"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core Subjects",
+      "id": 2,
+      "subjects": [
+        {
+          "name": "Operating System",
+          "id": 1,
+          "imageUrl": "https://i.postimg.cc/QCQXS5Zm/os.png",
+          "description": "Understand core concepts of Operating Systems",
+          "videoContent": [
+            {
+              "id": 1,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/_TpOHMCODXo?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Introduction to Operating Systems Placements Course 2022"
+            },
+            {
+              "id": 2,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/a1l4MceYHaQ?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 1: What is an Operating System ?"
+            },
+            {
+              "id": 3,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/LBqNWOqSzBA?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 2: Types of Operating Systems"
+            },
+            {
+              "id": 4,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/iAnEvdCya6M?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 3: Multi-Tasking vs Multi-Threading"
+            },
+            {
+              "id": 5,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/kHMXP_i6zew?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 4: Components of Operating System"
+            },
+            {
+              "id": 6,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/lo8Z61qCDqQ?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 5: System Calls in Operating System [Theory + Example + Hands-on Terminal]"
+            },
+            {
+              "id": 7,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/nAr2sLiLDWw?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 6: How Operating System Boots up?"
+            },
+            {
+              "id": 8,
+              "title": "OS",
+              "url": "https://www.youtube.com/embed/cE6WoaUnpAM?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+              "description": "Lecture 7: Difference between 32-bit & 64-bit Operating System"
+            }
+          ]
+        },
+        {
+          "name": "DBMS",
+          "id": 2,
+          "imageUrl": "https://i.postimg.cc/tJQqhkw7/dbms.png",
+          "description": "Master database management system concepts",
+          "videoContent": [
+            {
+              "id": 1,
+              "title": "DBMS",
+              "url": "https://www.youtube.com/embed/TYo_CUnIWP8?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+              "description": "Introduction to DBMS Placements Course 2022"
+            },
+            {
+              "id": 2,
+              "title": "DBMS",
+              "url": "https://www.youtube.com/embed/TYo_CUnIWP8?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+              "description": "Lecture 1: What the heck is Database Management System (DBMS)?"
+            },
+            {
+              "id": 3,
+              "title": "DBMS",
+              "url": "https://www.youtube.com/embed/mYI2nopkQJE?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+              "description": "Lecture 2: DBMS Architecture || Role of DBA"
+            },
+            {
+              "id": 4,
+              "title": "DBMS",
+              "url": "https://www.youtube.com/embed/kMHJhhIx5k4?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+              "description": "Lecture 3: ER Model Explained || ER Diagram Notations || DBMS for Placements"
+            },
+            {
+              "id": 5,
+              "title": "DBMS",
+              "url": "https://www.youtube.com/embed/8_dMPX6_qiY?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+              "description": "Lecture 4: Extended ER Features || Abstraction in ER Model"
+            },
+            {
+              "id": 6,
+              "title": "DBMS",
+              "url": "https://www.youtube.com/embed/w-VfTUvxETQ?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+              "description": "Lecture 5: How to think and formulate an ER Diagram || Banking System ER Model"
+            }
+          ]
+        },
+        {
+          "name": "Computer Networks",
+          "id": 3,
+          "imageUrl": "https://i.postimg.cc/k4tM6zjk/cn.png",
+          "description": "Understand fundamentals of computer networking",
+          "videoContent": [
+            {
+              "id": 1,
+              "title": "CN",
+              "url": "https://www.youtube.com/embed/JFF2vJaN0Cw?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+              "description": "lecture-1"
+            },
+            {
+              "id": 2,
+              "title": "CN",
+              "url": "https://www.youtube.com/embed/4D55Cmj2t-A?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+              "description": "lecture-2"
+            },
+            {
+              "id": 3,
+              "title": "CN",
+              "url": "https://www.youtube.com/embed/GfaHdjApnhU?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+              "description": "lecture-3"
+            },
+            {
+              "id": 4,
+              "title": "CN",
+              "url": "https://www.youtube.com/embed/lg-f92uY1Lc?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+              "description": "lecture-4"
+            },
+            {
+              "id": 5,
+              "title": "CN",
+              "url": "https://www.youtube.com/embed/uDulBxDb7GM?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+              "description": "lecture-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MERN STACK",
+      "id": 3,
+      "subjects": [
+        {
+          "name": "MERN Stack",
+          "id": 1,
+          "imageUrl": "https://i.postimg.cc/SNKNFgCF/mernstack.png",
+          "description": "Build dynamic web apps with MERN",
+          "videoContent": [
+            {
+              "id": 1,
+              "title": "Introduction to MERN Stack",
+              "url": "https://www.youtube.com/embed/d7W4pL0l5H0?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD",
+              "description": "Let's learn Full Stack Web Development using MERN Stack || Episode-1"
+            },
+            {
+              "id": 2,
+              "title": "Setting up MongoDB",
+              "url": "https://www.youtube.com/embed/3iDL9C4d0Yw?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD",
+              "description": "Understanding Internet, Networks, Web and more || Episode - 2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]
