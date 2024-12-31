@@ -52,7 +52,7 @@ Ensure you have the following installed on your system:
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/Lalitmax/AI-Powered-LMS
+git clone https://github.com/Suryanshrajs/AI-Learning-Management-System
 
 ```
 
