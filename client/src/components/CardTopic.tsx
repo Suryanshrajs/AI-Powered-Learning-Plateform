@@ -1,6 +1,7 @@
 "use client";
+import Image from "next/image";
 
-import { Card, Progress } from "flowbite-react";
+import { Progress } from "flowbite-react";
 import { useState } from "react";
 
 interface CardProps {
@@ -10,20 +11,20 @@ interface CardProps {
 }
 
 const CardTopic: React.FC<CardProps> = ({ title, imageUrl, callBack }) => {
-    const [progress, setProgress] = useState(10); // Initial progress value
-
+   // const [progress, setProgress] = useState(10); // Initial progress value
+    const progress = 10;
     return (
         <div onClick={callBack} className="cursor-pointer max-w-[370px] rounded-lg border bg-neutral-100 dark:bg-[#181a1b] hover:shadow-2xl dark:border-[#353a3c] shadow-md p-[1px] transition-all duration-300 select-none">
             {/* Image Section */}
-            <div className="max-h-48 w-full overflow-hidden rounded-t-md rounded-b-sm mb-2">
-                <img
-                    alt={title}
-                    loading="lazy"
-                    decoding="async"
-                    className="object-contain w-full h-full"
-                    src={imageUrl}
-                />
-            </div>
+            <Image
+    alt={title}
+    loading="lazy"
+    decoding="async"
+    className="object-contain w-full h-full"
+    src={imageUrl}
+    width={370}  // Adjust width accordingly
+    height={208} // Adjust height accordingly
+/>
 
             <div className="mx-2">
                 {/* Title */}

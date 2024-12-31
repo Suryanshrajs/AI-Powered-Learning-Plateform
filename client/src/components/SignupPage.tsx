@@ -33,10 +33,16 @@ const SignupPage = () => {
         console.log("Signup successful:", response.data.message);
         alert("Signup successful! You can now log in.");
       }
-    } catch (error: any) {
-      console.log("Signup failed:", error.response?.data?.message || error.message);
-      alert(error.response?.data?.message || "Signup failed. Please try again.");
+    }  catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        console.log("Signup failed:", error.response?.data?.message || error.message);
+        alert(error.response?.data?.message || "Signup failed. Please try again.");
+      } else {
+        console.log("Unexpected error:", error);
+        alert("An unexpected error occurred. Please try again.");
+      }
     }
+    
   };
 
   if (!isClient) return null;

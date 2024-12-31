@@ -1,8 +1,8 @@
 // components/ScreenshotComponent.js
 "use client"
-"use client"
 import { useState } from "react";
 import html2canvas from "html2canvas";
+import Image from "next/image";
 
 const ScreenshotComponent = () => {
     const [screenshotPath, setScreenshotPath] = useState("");
@@ -57,7 +57,13 @@ const ScreenshotComponent = () => {
                 {screenshotPath && (
                     <div className="mt-4">
                         <p className="text-lg">Screenshot Path:</p>
-                        <img src={screenshotPath} alt="Screenshot" className="mt-2 w-64" />
+                        <Image
+                            src={screenshotPath}
+                            alt="Screenshot"
+                            className="mt-2 w-64"
+                            width={256}
+                            height={256}
+                        />
                     </div>
                 )}
             </div>
@@ -99,4 +105,3 @@ const ScreenshotComponent = () => {
 };
 
 export default ScreenshotComponent;
-

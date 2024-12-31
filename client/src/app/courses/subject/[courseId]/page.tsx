@@ -36,7 +36,7 @@ const Page = () => {
                     // Dispatch the data to Redux
                     dispatch(setCourses({ courses: response.data.courses[0].courses, subjectNames: fetchedSubjectNames }));
                     setLoading(false);
-                } catch (err: any) {
+                } catch (err: unknown) {
                     console.error('Error fetching subjects:', err);
                     setLoading(false);
                 }

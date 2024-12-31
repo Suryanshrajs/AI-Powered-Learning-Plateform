@@ -49,7 +49,7 @@ const Page = () => {
                     dispatch(setCourses({ courses, subjectNames }));
 
                     setLoading(false);
-                } catch (err: any) {
+                } catch (err: unknown) {
                     console.log(err);
                     setLoading(false);
                 }

@@ -1,15 +1,16 @@
-
 "use client"
 import React from 'react';
 import '@/styles/style.css'
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'; // Import Image component from next/image
+
 const MainPage = () => {
 
     const router = useRouter();
     function handleClick() {
         router.push('/courses');
-
     }
+
     return (
         <div className="main-content flex justify-center">
             <div className="content-list">
@@ -22,7 +23,7 @@ const MainPage = () => {
                             Complete Roadmap to Become a Software Engineer <span>Structured Manner</span>
                         </p>
                         <div className="hero-button">
-                            <button onClick={() =>handleClick() }
+                            <button onClick={() => handleClick()}
                                 className="btn"
                                 style={{
                                     backgroundImage: "linear-gradient(90deg, #020024 0%, rgb(33, 57, 101) 60%, var(--main-color) 100%)",
@@ -31,18 +32,17 @@ const MainPage = () => {
                             >
                                 Get Start
                             </button>
-                       
                         </div>
                     </div>
                     <div className="right-hero">
-                        <img src="/1.png" alt="pc img" width="1200px" />
+                        <Image src="/1.png" alt="pc img" width={1200} height={800} />
                     </div>
                 </section>
 
                 <section className="about-section">
                     <div className="left-about">
                         <h1>About Us</h1>
-                        <img src="ssssss-removebg-preview.png" alt="About Us" />
+                        <Image src="/ssssss-removebg-preview.png" alt="About Us" width={500} height={300} />
                     </div>
                     <div className="right-about">
                         <div className="r-upper">
@@ -72,37 +72,37 @@ const MainPage = () => {
                     </div>
                     <div className="instructor-img">
                         <div className="img-name">
-                            <img src="/love-babbar.webp" alt="Love Babbar" />
+                            <Image src="/love-babbar.webp" alt="Love Babbar" width={120} height={120} />
                             <h1>Love Babbar</h1>
                             <h3>Ex-Microsoft</h3>
                         </div>
 
                         <div className="img-name">
-                            <img src="/apna.jpeg" alt="Shradha Khapra" />
+                            <Image src="/apna.jpeg" alt="Shradha Khapra" width={120} height={120} />
                             <h1>Shradha Khapra</h1>
                             <h3>Ex-Microsoft</h3>
                         </div>
 
                         <div className="img-name">
-                            <img src="/gp_sir.jpg" alt="Gajendra Purohit" />
+                            <Image src="/gp_sir.jpg" alt="Gajendra Purohit" width={120} height={120} />
                             <h1>Gajendra Purohit</h1>
                             <h3>Maths</h3>
                         </div>
 
                         <div className="img-name">
-                            <img src="/codewithharry.jpg" alt="CodeWithHarry" />
+                            <Image src="/codewithharry.jpg" alt="CodeWithHarry" width={120} height={120} />
                             <h1>CodeWithHarry</h1>
                             <h3>Python, C, GitHub</h3>
                         </div>
 
                         <div className="img-name">
-                            <img src="/gates_mesar2.jpg" alt="Gate Smashers" />
+                            <Image src="/gates_mesar2.jpg" alt="Gate Smashers" width={120} height={120} />
                             <h1>Gate Smashers</h1>
                             <h3>Core Subject</h3>
                         </div>
 
                         <div className="img-name">
-                            <img src="/sher2.png" alt="Sheriyans Coding" />
+                            <Image src="/sher2.png" alt="Sheriyans Coding" width={120} height={120} />
                             <h1>Sheriyans Coding</h1>
                             <h3>Web Development</h3>
                         </div>
@@ -115,46 +115,46 @@ const MainPage = () => {
                     </h1>
                     <div className="company-img">
                         <div className="c-img">
-                            <img src="/dell.png" alt="Dell" />
+                            <Image src="/dell.png" alt="Dell" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/wipro.png" alt="Wipro" />
+                            <Image src="/wipro.png" alt="Wipro" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/amazon.png" alt="Amazon" height="55px" />
+                            <Image src="/amazon.png" alt="Amazon" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/microshoft.png" alt="Microsoft" />
+                            <Image src="/microshoft.png" alt="Microsoft" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/oyo.png" alt="Oyo" />
+                            <Image src="/oyo.png" alt="Oyo" width={100} height={55} />
                         </div>
                         <div className="c-img oracle-hd">
-                            <img src="/oracle.png" alt="Oracle" />
+                            <Image src="/oracle.png" alt="Oracle" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/paypal.png" alt="PayPal" />
+                            <Image src="/paypal.png" alt="PayPal" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/ibm.png" alt="IBM" />
+                            <Image src="/ibm.png" alt="IBM" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/paytm.png" alt="Paytm" />
+                            <Image src="/paytm.png" alt="Paytm" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/flipkart.png" alt="Flipkart" />
+                            <Image src="/flipkart.png" alt="Flipkart" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/Deloitte.png" alt="Deloitte" />
+                            <Image src="/Deloitte.png" alt="Deloitte" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/unacademy.png" alt="Unacademy" />
+                            <Image src="/unacademy.png" alt="Unacademy" width={100} height={55} />
                         </div>
                         <div className="c-img microshoft-h">
-                            <img src="/RE1Mu3b.png" alt="Microsoft" />
+                            <Image src="/RE1Mu3b.png" alt="Microsoft" width={100} height={55} />
                         </div>
                         <div className="c-img">
-                            <img src="/jpmlogo.svg" alt="JPMorgan" />
+                            <Image src="/jpmlogo.svg" alt="JPMorgan" width={100} height={55} />
                         </div>
                     </div>
                 </section>

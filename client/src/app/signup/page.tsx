@@ -3,7 +3,7 @@ import { Header } from '@/components/HeaderPage'
 import React, { useEffect, useState } from 'react';
 import SignupPage from '@/components/SignupPage';
 
-const page = () => {
+const Page = () => {
 
     const [isClient, setIsClient] = useState(false);
 
@@ -25,4 +25,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Page;
