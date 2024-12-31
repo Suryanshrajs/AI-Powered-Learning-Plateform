@@ -4,8 +4,8 @@ import RightSidebar from '@/components/RightSidebar';
 import Sidebar from '@/components/Sidebar';
 import VideoPlayer from '@/components/VideoPlayer';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { useParams, useRouter } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+import { useParams } from 'next/navigation';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import axios from 'axios';
 import { setCourses } from '@/store/features/coursesdata/coursesdataSlice';
 import Loader from '@/components/Loader';
@@ -20,8 +20,15 @@ const Page = () => {
     const subjectNamesFromRedux = useAppSelector((state) => state.courseData.subjectNames);
     const subjectNames = subjectNamesFromRedux.find((e) => e.id === courseId)?.subjects || [];
     const subject = subjectNames.find((e) => e.id === subjectId);
-    const contentList = subject?.videoContent || [];
-    const contentListTopics = subject?.topics || [];
+
+    // Memoize contentList and contentListTopics to prevent unnecessary re-renders
+    const contentList = useMemo(() => {
+        return subject?.videoContent || [];
+    }, [subject]);
+
+    const contentListTopics = useMemo(() => {
+        return subject?.topics || [];
+    }, [subject]);
 
     const [isOpen, setIsOpen] = useState(false);
     const [sidebarWidth, setSidebarWidth] = useState(0);
@@ -32,6 +39,7 @@ const Page = () => {
     const [videoDescription, setVideoDescription] = useState<string>('');
     const [loading, setLoading] = useState(false);
 
+    // Fetch video content if not available in Redux store
     useEffect(() => {
         const fetchVideoContent = async () => {
             if (contentList.length === 0) {
@@ -69,6 +77,7 @@ const Page = () => {
         setRightBarIsOpen((prev) => !prev);
     }
 
+    // Track the sidebar width on resize
     useEffect(() => {
         const updateSidebarWidth = () => {
             if (sidebarRef.current) {

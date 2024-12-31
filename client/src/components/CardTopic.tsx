@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import { Progress } from "flowbite-react";
-import { useState } from "react";
+
 
 interface CardProps {
     title: string;
