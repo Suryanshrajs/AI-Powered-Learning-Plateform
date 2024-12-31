@@ -26,7 +26,7 @@ function LoginPage() {
         console.log("Form submitted with:", { email, password });
 
         try {
-            const response = await axios.post("http://localhost:3001/api/login", {
+            const response = await axios.post("https://ai-powered-lms.onrender.com/api/login", {
                 email,
                 password,
             }, {

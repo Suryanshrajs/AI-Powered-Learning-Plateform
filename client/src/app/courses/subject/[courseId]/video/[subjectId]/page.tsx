@@ -45,7 +45,7 @@ const Page = () => {
             if (contentList.length === 0) {
                 setLoading(true);
                 try {
-                    const response = await axios.get('http://localhost:3001/api/courses');
+                    const response = await axios.get('https://ai-powered-lms.onrender.com/api/courses');
                     const fetchedSubjectNames = response.data.courses[0].subjectNames;
 
                     dispatch(setCourses({ courses: response.data.courses[0].courses, subjectNames: fetchedSubjectNames }));

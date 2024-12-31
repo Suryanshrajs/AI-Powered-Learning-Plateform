@@ -24,7 +24,7 @@ const SignupPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/register",
+        "https://ai-powered-lms.onrender.com/api/register",
         { fullName, email, password },
         { withCredentials: true } // Allows cookies to be sent and received
       );

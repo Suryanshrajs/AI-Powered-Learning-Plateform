@@ -30,7 +30,7 @@ const Page = () => {
             if (subjectNames.length === 0) { // If no subjects in Redux, fetch from server
                 setLoading(true);
                 try {
-                    const response = await axios.get('http://localhost:3001/api/courses'); // Replace with your API endpoint
+                    const response = await axios.get('https://ai-powered-lms.onrender.com/api/courses'); // Replace with your API endpoint
                     const fetchedSubjectNames = response.data.courses[0].subjectNames;
 
                     // Dispatch the data to Redux
