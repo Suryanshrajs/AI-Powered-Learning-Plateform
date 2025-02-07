@@ -10,7 +10,7 @@ const port = process.env.PORT;
 
 // CORS Configuration
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://ai-learning-management-system.vercel.app"],// Specify your client's URL
+  origin: ["http://localhost:3000", "https://ailearning-management.vercel.app/"],// Specify your client's URL
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };
 
