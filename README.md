@@ -1,4 +1,4 @@
-# AI Powered Learning Management System
+# AI Powered Learning Platform
 
 Welcome to the repository of my innovative web application, designed to address real-life problems by integrating state-of-the-art technologies. This project combines **Next.js**, **Express**, **MongoDB**, **Flowbite**, **Firebase**, **TypeScript** and **JavaScript** to create a seamless user experience. It also incorporates **Gemini API** for advanced interaction capabilities.
 
